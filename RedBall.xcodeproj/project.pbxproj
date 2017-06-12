@@ -15,6 +15,7 @@
 		5D18FD4E1EEE242500B13142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D18FD4C1EEE242500B13142 /* LaunchScreen.storyboard */; };
 		5D18FD591EEE242500B13142 /* RedBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18FD581EEE242500B13142 /* RedBallTests.swift */; };
 		5D18FD641EEE242500B13142 /* RedBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18FD631EEE242500B13142 /* RedBallUITests.swift */; };
+		BB0BE5F2AC2C757B9929DF00 /* libPods-RedBall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A624C2431EE81A262C28AFF /* libPods-RedBall.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A624C2431EE81A262C28AFF /* libPods-RedBall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedBall.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D18FD3D1EEE242500B13142 /* RedBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D18FD401EEE242500B13142 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D18FD421EEE242500B13142 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,9 @@
 		5D18FD5F1EEE242500B13142 /* RedBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D18FD631EEE242500B13142 /* RedBallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBallUITests.swift; sourceTree = "<group>"; };
 		5D18FD651EEE242500B13142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D18FD711EEE251400B13142 /* RedBall-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RedBall-Bridging-Header.h"; sourceTree = "<group>"; };
+		AF4EBF84F697C69A2E2A2DFB /* Pods-RedBall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedBall.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedBall/Pods-RedBall.release.xcconfig"; sourceTree = "<group>"; };
+		F60F5501E1A1664905E1FBDE /* Pods-RedBall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedBall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedBall/Pods-RedBall.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0BE5F2AC2C757B9929DF00 /* libPods-RedBall.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,8 @@
 				5D18FD571EEE242500B13142 /* RedBallTests */,
 				5D18FD621EEE242500B13142 /* RedBallUITests */,
 				5D18FD3E1EEE242500B13142 /* Products */,
+				B8EDAB3488A33A98E2ACA876 /* Pods */,
+				BF46AED18823F906E3B59F42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +114,7 @@
 				5D18FD4C1EEE242500B13142 /* LaunchScreen.storyboard */,
 				5D18FD4F1EEE242500B13142 /* Info.plist */,
 				5D18FD471EEE242500B13142 /* RedBall.xcdatamodeld */,
+				5D18FD711EEE251400B13142 /* RedBall-Bridging-Header.h */,
 			);
 			path = RedBall;
 			sourceTree = "<group>";
@@ -128,6 +137,23 @@
 			path = RedBallUITests;
 			sourceTree = "<group>";
 		};
+		B8EDAB3488A33A98E2ACA876 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F60F5501E1A1664905E1FBDE /* Pods-RedBall.debug.xcconfig */,
+				AF4EBF84F697C69A2E2A2DFB /* Pods-RedBall.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF46AED18823F906E3B59F42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A624C2431EE81A262C28AFF /* libPods-RedBall.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D18FD681EEE242500B13142 /* Build configuration list for PBXNativeTarget "RedBall" */;
 			buildPhases = (
+				42D0489615380B3123A802DE /* [CP] Check Pods Manifest.lock */,
 				5D18FD391EEE242500B13142 /* Sources */,
 				5D18FD3A1EEE242500B13142 /* Frameworks */,
 				5D18FD3B1EEE242500B13142 /* Resources */,
+				EF4A79F6E43163E3CFDB9D38 /* [CP] Embed Pods Frameworks */,
+				2F756ECD1DD56D7DC57E49AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +225,7 @@
 				TargetAttributes = {
 					5D18FD3C1EEE242500B13142 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					5D18FD531EEE242500B13142 = {
@@ -256,6 +286,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F756ECD1DD56D7DC57E49AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedBall/Pods-RedBall-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42D0489615380B3123A802DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF4A79F6E43163E3CFDB9D38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedBall/Pods-RedBall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D18FD391EEE242500B13142 /* Sources */ = {
@@ -414,24 +492,31 @@
 		};
 		5D18FD691EEE242500B13142 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F60F5501E1A1664905E1FBDE /* Pods-RedBall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RedBall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tong.RedBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RedBall/RedBall-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		5D18FD6A1EEE242500B13142 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF4EBF84F697C69A2E2A2DFB /* Pods-RedBall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RedBall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tong.RedBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RedBall/RedBall-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -509,6 +594,7 @@
 				5D18FD6A1EEE242500B13142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D18FD6B1EEE242500B13142 /* Build configuration list for PBXNativeTarget "RedBallTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +603,7 @@
 				5D18FD6D1EEE242500B13142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D18FD6E1EEE242500B13142 /* Build configuration list for PBXNativeTarget "RedBallUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +612,7 @@
 				5D18FD701EEE242500B13142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
