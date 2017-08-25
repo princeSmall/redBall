@@ -1,3 +1,3 @@
 # redBall
 
-![GIF](./GIF/RedBall.gif)
+![GIF](./GIF/redBall.gif)
